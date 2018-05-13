@@ -6,13 +6,10 @@
 package problemcore;
 
 import AiCSPhwCore.CSP;
-import AiCSPhwCore.CSP;
-import AiCSPhwCore.Domain;
 import AiCSPhwCore.Domain;
 import AiCSPhwCore.NotEqualConstraint;
-import AiCSPhwCore.NotEqualConstraint;
 import AiCSPhwCore.Variable;
-import AiCSPhwCore.Variable;
+
 
 /**
  *
@@ -32,9 +29,8 @@ public class ScheduleCSP extends CSP {
     public static final String C01 = "PROFESSOR AK";
 
     /**
-     * Constructs a map CSP for the principal states and territories of
-     * Australia, with the colors Red, Green, and Blue.
-     */
+     * Constructs a CSP for Course Scheduling with Domains of Lecturers.
+     * */
     public ScheduleCSP() {
         collectVariables();
 
@@ -65,11 +61,10 @@ public class ScheduleCSP extends CSP {
     }
 
     /**
-     * Returns the principle states and territories of Australia as a list of
-     * variables.
+     *  Returns the classrooms as variables
+     * 
      *
-     * @return the principle states and territories of Australia as a list of
-     * variables.
+     * .
      */
     private void collectVariables() {
         addVariable(C1);
